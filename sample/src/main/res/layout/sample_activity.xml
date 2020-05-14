@@ -42,9 +42,9 @@
                 style="@style/description_style"
                 android:text="Show material progress" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/progress_dialog"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -53,9 +53,9 @@
                 style="@style/description_style"
                 android:text="A basic message" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/basic_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -64,9 +64,9 @@
                 style="@style/description_style"
                 android:text="A basic message \nwithout buttons" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/basic_test_without_buttons"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -75,9 +75,9 @@
                 style="@style/description_style"
                 android:text="A title with a text under" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/under_text_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -85,9 +85,9 @@
                 style="@style/description_style"
                 android:text="Styled text and stroke" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/styled_text_and_stroke"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -96,9 +96,9 @@
                 style="@style/description_style"
                 android:text="show error message" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/error_text_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -107,9 +107,9 @@
                 style="@style/description_style"
                 android:text="A success message" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/success_text_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -119,9 +119,9 @@
                 style="@style/description_style"
                 android:text="A warning message, with a listener bind to the Confirm-button..." />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/warning_confirm_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -130,9 +130,9 @@
                 style="@style/description_style"
                 android:text="A warning message, with listeners bind to Cancel and Confirm button..." />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/warning_cancel_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -141,9 +141,9 @@
                 style="@style/description_style"
                 android:text="A message with a custom icon" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/custom_img_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -152,9 +152,9 @@
                 style="@style/description_style"
                 android:text="A message with neutral button" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/neutral_btn_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -163,9 +163,9 @@
                 style="@style/description_style"
                 android:text="Disabled OK button" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/disabled_btn_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -174,9 +174,9 @@
                 style="@style/description_style"
                 android:text="Custom view" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/custom_view_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 
@@ -185,9 +185,9 @@
                 style="@style/description_style"
                 android:text="Custom btn colors" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/custom_btn_colors_test"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
                 android:layout_margin="10dp"
                 android:text="Try me!" />
 

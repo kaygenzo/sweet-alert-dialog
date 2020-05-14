@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="float_transparent">#00000000</color>
     <!--<color name="custom_float_bg">#96333333</color>-->
     <color name="custom_float_bg">#F27474</color>

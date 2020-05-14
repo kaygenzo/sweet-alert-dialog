@@ -182,30 +182,30 @@
             android:paddingTop="10dp"
             android:visibility="visible">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/cancel_button"
-                style="@style/dialog_blue_button"
-                android:layout_marginRight="25dp"
-                android:background="@drawable/red_button_background"
+                style="@style/ButtonCancel"
+                android:layout_marginEnd="25dp"
                 android:visibility="gone"
                 tools:text="cancel"
                 tools:visibility="visible" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/neutral_button"
-                style="@style/dialog_blue_button"
-                android:layout_marginLeft="-10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/gray_button_background"
+                style="@style/ButtonNeutral"
+                android:layout_marginStart="-10dp"
+                android:layout_marginEnd="10dp"
                 android:visibility="gone"
                 tools:text="neutral"
-                tools:visibility="gone" />
+                tools:visibility="visible" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/confirm_button"
-                style="@style/dialog_blue_button"
+                style="@style/ButtonConfirm"
+                tools:text="Ok"
                 android:text="Ok"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:visibility="visible"/>
         </LinearLayout>
 
 

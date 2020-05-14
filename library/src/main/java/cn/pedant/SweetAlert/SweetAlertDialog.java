@@ -218,12 +218,8 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         setCancelText(mCancelText);
         setConfirmText(mConfirmText);
         setNeutralText(mNeutralText);
-        applyStroke();
-        setConfirmButtonBackgroundColor(mConfirmButtonBackgroundColor);
         setConfirmButtonTextColor(mConfirmButtonTextColor);
-        setCancelButtonBackgroundColor(mCancelButtonBackgroundColor);
         setCancelButtonTextColor(mCancelButtonTextColor);
-        setNeutralButtonBackgroundColor(mNeutralButtonBackgroundColor);
         setNeutralButtonTextColor(mNeutralButtonTextColor);
         changeAlertType(mAlertType, true);
 
@@ -240,7 +236,7 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
 
         adjustButtonContainerVisibility();
 
-        mConfirmButton.setBackgroundResource(R.drawable.green_button_background);
+        //mConfirmButton.setBackgroundResource(R.drawable.green_button_background);
         mErrorFrame.clearAnimation();
         mErrorX.clearAnimation();
         mSuccessTick.clearAnimation();
@@ -389,15 +385,6 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
-    private void applyStroke() {
-        if (Float.compare(defStrokeWidth, strokeWidth) != 0) {
-            Resources r = getContext().getResources();
-            setButtonBackgroundColor(mConfirmButton, r.getColor(R.color.main_green_color));
-            setButtonBackgroundColor(mNeutralButton, r.getColor(R.color.main_disabled_color));
-            setButtonBackgroundColor(mCancelButton, r.getColor(R.color.red_btn_bg_color));
-        }
-    }
-
     public boolean isShowCancelButton() {
         return mShowCancel;
     }
@@ -445,56 +432,6 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
             mConfirmButton.setText(mConfirmText);
         }
         return this;
-    }
-
-    public SweetAlertDialog setConfirmButtonBackgroundColor(Integer color) {
-        mConfirmButtonBackgroundColor = color;
-        setButtonBackgroundColor(mConfirmButton, color);
-        return this;
-    }
-
-    public Integer getConfirmButtonBackgroundColor() {
-        return mConfirmButtonBackgroundColor;
-    }
-
-    public SweetAlertDialog setNeutralButtonBackgroundColor(Integer color) {
-        mNeutralButtonBackgroundColor = color;
-        setButtonBackgroundColor(mNeutralButton, color);
-        return this;
-    }
-
-    public Integer getNeutralButtonBackgroundColor() {
-        return mNeutralButtonBackgroundColor;
-    }
-
-    public SweetAlertDialog setCancelButtonBackgroundColor(Integer color) {
-        mCancelButtonBackgroundColor = color;
-        setButtonBackgroundColor(mCancelButton, color);
-        return this;
-    }
-
-    public Integer getCancelButtonBackgroundColor() {
-        return mCancelButtonBackgroundColor;
-    }
-
-    private void setButtonBackgroundColor(Button btn, Integer color) {
-        if (btn != null && color != null) {
-            Drawable[] drawableItems = ViewUtils.getDrawable(btn);
-            if (drawableItems != null) {
-                GradientDrawable gradientDrawableUnChecked = (GradientDrawable) drawableItems[1];
-                //solid color
-                gradientDrawableUnChecked.setColor(color);
-                //stroke
-                gradientDrawableUnChecked.setStroke((int) strokeWidth, genStrokeColor(color));
-            }
-        }
-    }
-
-    private int genStrokeColor(int color) {
-        float hsv[] = new float[3];
-        Color.colorToHSV(color, hsv);
-        hsv[2] *= 0.7f; // decrease value component
-        return Color.HSVToColor(hsv);
     }
 
     public SweetAlertDialog setConfirmButtonTextColor(Integer color) {
